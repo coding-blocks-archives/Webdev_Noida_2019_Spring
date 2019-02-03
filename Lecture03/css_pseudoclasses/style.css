@@ -1,0 +1,29 @@
+div {
+  padding: 10px;
+  margin: 10px;
+  border: solid black 1px;
+}
+
+div:hover {
+  font-weight: bold;
+}
+
+.middle:hover {
+  color: red;
+}
+
+div > div > div:active {
+  font-size: 20pt;
+}
+
+div:nth-child(2n) {
+  color: blue;
+}
+
+div:nth-of-type(3n) {
+  font-style: italic;
+}
+
+div > div > div {
+  display: block;
+}
