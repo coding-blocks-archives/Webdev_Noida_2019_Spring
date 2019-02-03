@@ -1,0 +1,19 @@
+.alpha, .beta {
+  font-style: italic
+}
+
+div li {
+  font-size: 20pt;
+}
+
+div > ul > li {
+  color: red;
+}
+
+div ~ p {
+  font-family: 'Arial'
+}
+
+p + p {
+  color: blue;
+}
