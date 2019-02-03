@@ -1,0 +1,19 @@
+div {
+  padding: 10px;
+  margin: 10px;
+  min-height: 10px;
+  border: solid black 5px;
+}
+
+
+.outer {
+  background-color: coral;
+}
+
+.middle {
+  background-color: lightskyblue;
+}
+
+.inner {
+  background-color: lightgreen;
+}
