@@ -1,0 +1,40 @@
+.container {
+  height: 400px;
+  width: 600px;
+  margin: 50px;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+
+.item {
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  color: white;
+  font-size: 18pt;
+}
+
+.one {
+  width: 80px
+}
+
+.two {
+  width: 20px;
+}
+
+.fourteen {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.thirteen {
+  flex-grow: 8;
+  flex-shrink: 5;
+}
