@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    #box {
+      margin: 100px;
+      padding: 30px;
+      height: 200px;
+      font-size: 30pt;
+      width: 200px;
+      background-color: lightcoral;
+      color: white;
+      border: solid black 5px;
+      box-shadow: 15px 15px 5px grey;
+      transition: 0.5s;
+    }
+
+    #box:hover {
+      transform: translate(-10px, -10px);
+      transition: 1s;
+      box-shadow: 25px 25px 8px grey;
+    }
+
+    #box:active {
+      transform: translate(5px, 5px);
+      transition: 0.5s;
+      box-shadow: 10px 10px 3px grey;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box"></div>
+
+</body>
+</html>

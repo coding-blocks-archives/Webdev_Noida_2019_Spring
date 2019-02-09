@@ -1,0 +1,47 @@
+div {
+  height: 60px;
+  width: 60px;
+  background-color: lightsalmon;
+  margin: 20px;
+  border: solid black 1px;
+}
+
+#one {
+  transform: scale(2);
+}
+
+#two {
+  transform: scale(0.5);
+}
+
+#three {
+  transform: scaleX(2)
+}
+
+#four {
+  transform: scaleY(0.2)
+}
+
+#five {
+  transform: rotateZ(45deg);
+}
+
+#six {
+  transform: rotateX(45deg);
+}
+
+#seven {
+  transform: translate(40px, 40px);
+}
+
+#eight {
+  transform: skewX(10deg);
+}
+
+#nine {
+  transform: skewY(45deg);
+}
+
+#ten {
+  transform: matrix(2,0.5,0.5,2,30, 30)
+}
