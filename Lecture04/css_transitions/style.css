@@ -1,0 +1,25 @@
+div {
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+  background-color: plum;
+  transition: 0.2s;
+}
+
+
+#one:hover {
+  height: 100px;
+  transition: 1s;
+}
+
+#two:hover {
+  width: 200px;
+  background-color: brown;
+  transition: 1s width, 5s background-color ;
+}
+
+#three:hover {
+  transform: scaleY(3);
+  border: solid blueviolet 5px;
+  transition: 1s;
+}

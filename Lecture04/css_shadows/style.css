@@ -1,0 +1,22 @@
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 80px;
+  background-color: deeppink;
+  border: solid black 3px;
+  box-shadow: 10px 10px 5px grey;
+  transition: 0.7s;
+
+}
+
+.box:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 10px grey;
+  transition: 0.5s;
+}
+
+.box:active {
+  transform: translate(5px, 5px);
+  box-shadow: 5px 5px 2px grey;
+  transition: 0.2s;
+}
