@@ -1,0 +1,55 @@
+let obj = {a: 10, b: 'abab', c: true}
+undefined
+obj.a
+10
+obj['a']
+10
+obj['b']
+"abab"
+let obj2 = {'a': 10, 'b': 'abab', 'c': true}
+undefined
+obj2
+Object { a: 10, b: "abab", c: true }
+
+obj['c']
+true
+let a = 'b'
+undefined
+obj[a]
+"abab"
+obj['b']
+"abab"
+a == 'b'
+true
+obj[a]
+"abab"
+obj['x y'] = 4444
+4444
+obj
+Object { a: 10, b: "abab", c: true, "x y": 4444 }
+
+obj['x y']
+4444
+obj[' '] = 3453
+3453
+obj
+Object { a: 10, b: "abab", c: true, "x y": 4444, " ": 3453 }
+
+obj[''] = 34
+34
+obj
+Object { a: 10, b: "abab", c: true, "x y": 4444, " ": 3453, "": 34 }
+
+obj['']
+34
+obj[' ']
+3453
+obj[8] = 'sdbsf'
+"sdbsf"
+obj
+Object { 8: "sdbsf", a: 10, b: "abab", c: true, "x y": 4444, " ": 3453, "": 34 }
+
+obj[8]
+"sdbsf"
+obj['8']
+"sdbsf"

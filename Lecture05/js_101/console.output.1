@@ -1,0 +1,123 @@
+a
+ReferenceError: a is not defined[Learn More] debugger eval code:1:1
+let b = 10
+undefined
+typeof b
+"number"
+b = "Asdasdasd"
+"Asdasdasd"
+typeof b
+"string"
+typeof 1234
+"number"
+typeof 1234.9
+"number"
+typeof "bfds"
+"string"
+typeof 'hgdgh'
+"string"
+typeof `sddsv`
+"string"
+typeof 'a'
+"string"
+typeof true
+"boolean"
+typeof false
+"boolean"
+typeof [1,2,3]
+"object"
+let obj = {a: 10, b: 'asdsad', c: true}
+undefined
+obj.a
+10
+obj.b
+"asdsad"
+obj.c
+true
+typeof obj
+"object"
+obj
+Object { a: 10, b: "asdsad", c: true }
+
+obj.d = 123
+123
+obj
+Object { a: 10, b: "asdsad", c: true, d: 123 }
+
+delete obj.a
+true
+obj
+Object { b: "asdsad", c: true, d: 123 }
+
+obj.k = {p: 10, q: 11}
+Object { p: 10, q: 11 }
+
+obj
+{…}
+​
+b: "asdsad"
+​
+c: true
+​
+d: 123
+​
+k: Object { p: 10, q: 11 }
+​
+<prototype>: Object { … }
+
+obj.k.p
+10
+let arr [1, 'asd', true]
+SyntaxError: unexpected token: '['[Learn More] debugger eval code:1:8
+let arr = [1, 'asd', true]
+undefined
+arr
+Array(3) [ 1, "asd", true ]
+
+arr.push(10)
+4
+arr
+Array(4) [ 1, "asd", true, 10 ]
+
+arr.unshift(20)
+5
+arr
+Array(5) [ 20, 1, "asd", true, 10 ]
+
+arr.shift()
+20
+arr
+Array(4) [ 1, "asd", true, 10 ]
+
+arr.pop()
+10
+arr
+Array(3) [ 1, "asd", true ]
+
+arr[0]
+1
+arr[1]
+"asd"
+arr[4] = 'advadb'
+"advadb"
+arr
+Array(5) [ 1, "asd", true, <1 empty slot>, "advadb" ]
+
+arr.length
+5
+arr[3]
+undefined
+typeof arr[3]
+"undefined"
+let n = null
+undefined
+a
+ReferenceError: a is not defined[Learn More] debugger eval code:1:1
+let a = 10
+undefined
+a= 11
+11
+n
+null
+typeof n
+"object"

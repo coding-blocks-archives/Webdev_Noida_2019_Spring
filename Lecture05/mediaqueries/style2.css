@@ -1,0 +1,24 @@
+.box {
+  width: 300px;
+  height: 500px;
+  background-color: blueviolet;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .box {
+    width: 700px;
+    background-color: darkred;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 500px;
+    background-color: darkturquoise;
+  }
+}
+
+

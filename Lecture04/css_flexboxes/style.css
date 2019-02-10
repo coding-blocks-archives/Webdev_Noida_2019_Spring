@@ -1,11 +1,11 @@
 .container {
   height: 400px;
-  width: 600px;
+  width: 70%;
   margin: 50px;
   background-color: lightblue;
   display: flex;
   flex-wrap: wrap-reverse;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   align-content: space-evenly;
