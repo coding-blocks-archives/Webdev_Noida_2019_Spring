@@ -1,0 +1,97 @@
+a
+Object { p: 10, q: 20, r: "sfbs" }
+
+b
+Object { k: "dgn", l: true, m: 53 }
+
+c
+Object {  }
+
+c.k
+"dgn"
+c.p
+10
+let x = {a: 1}
+undefined
+let y = {a: 1}
+undefined
+x == y
+false
+let z = x
+undefined
+z == x
+true
+z.a
+1
+z.a = 9
+9
+x.a
+9
+c.__proto__ == b
+true
+b.__proto__ == a
+true
+c
+Object {  }
+
+c.__proto__.__proto__ == a
+true
+a.__proto__
+Object { … }
+
+x.__proto__
+Object { … }
+
+a.__proto__ == x.__proto__
+true
+a.__proto__.__proto__
+null
+let s = "asdasd"
+undefined
+s
+"asdasd"
+s.__proto__
+String { "" }
+
+s.__proto__.__proto__
+Object { … }
+
+s.__proto__.__proto__ == a.__proto__
+true
+let b = true
+SyntaxError: redeclaration of let b debugger eval code:1:1
+let z true
+SyntaxError: unexpected token: boolean literal 'true'[Learn More] debugger eval code:1:6
+let z = true
+SyntaxError: redeclaration of let z debugger eval code:1:1
+z= true
+true
+z.__proto__
+Boolean { false }
+
+z.__proto__.__proto__
+Object { … }
+
+let g = 10
+undefined
+g.__proto__
+Number { 0 }
+
+g.__proto__.__proto__
+Object { … }
+
+function hello () {console.log('hi') }
+undefined
+hello()
+hi debugger eval code:1:20
+undefined
+hello.__proto__
+function ()
+
+hello.__proto__.__proto__
+Object { … }
+
+let u = undefined
+undefined
+u.__proto__
+TypeError: u is undefined[Learn More]
