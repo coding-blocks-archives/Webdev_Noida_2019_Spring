@@ -9,18 +9,36 @@ $(() => {
       .click(() => {
         $('#tasklist').append(
           $('<li>')
-            .append(
-              $('<button>').text('❌')
-            )
-            .append(
-              $('<button>').text('⬆️')
-            )
-            .append(
-              $('<button>').text('⬇️')
-            )
-            .append(
-              $('<span>').text($('#newtask').val())
-            )
+          .append(
+            $('<button>')
+            .text('❌')
+            .click((ev) => {
+              $(ev.target).parent().remove()
+            })
+          )
+          .append(
+            $('<button>')
+            .attr('class', 'btn-up')
+            .text('⬆️')
+            .click((ev) => {
+              $(ev.target).parent().insertBefore(
+                $(ev.target).parent().prev()
+              )
+            })
+          )
+          .append(
+            $('<button>')
+            .attr('class', 'btn-down')
+            .text('⬇️')
+            .click((ev) => {
+              $(ev.target).parent().insertAfter(
+                $(ev.target).parent().next()
+              )
+            })
+          )
+          .append(
+            $('<span>').text($('#newtask').val())
+          )
         )
       })
     )
