@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
 function m1(req, res, next) {
   console.log('running m1')
   if (req.query.m == 1) {
@@ -37,6 +40,11 @@ app.get('/bye', (req, res, next) => {
 
 app.get('/bye', (req, res) => {
   res.send('Farewell')
+})
+
+app.post('/bye', (req, res) => {
+  console.log(req.body)
+  res.send('See you again!')
 })
 
 app.listen(5555)
