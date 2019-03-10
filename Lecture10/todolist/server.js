@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 
-
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+
+app.use('/app', express.static(__dirname + '/public'))
 
 let tasks = [] // {name: 'asdasd', priority: 3}
 
