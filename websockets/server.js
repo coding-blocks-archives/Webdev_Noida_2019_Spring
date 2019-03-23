@@ -6,12 +6,21 @@ const app = express()
 const server = http.Server(app)
 const io = socketio(server)
 
+let idUserMap = {}
+
 io.on('connection', (socket) => {
   console.log('Connected ' + socket.id)
 
+  socket.on('login', (data) => {
+    idUserMap[socket.id] = data.username
+    socket.emit('loggedin')
+  })
+
   socket.on('chat', (data) => {
-    console.log(socket.id + ' says ' + data.msg)
-    socket.broadcast.emit('chat_rcvd', data)
+    socket.broadcast.emit('chat_rcvd', {
+      username: idUserMap[socket.id],
+      msg: data.msg
+    })
   })
 })
 
