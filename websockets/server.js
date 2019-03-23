@@ -8,6 +8,11 @@ const io = socketio(server)
 
 io.on('connection', (socket) => {
   console.log('Connected ' + socket.id)
+
+  socket.on('chat', (data) => {
+    console.log(socket.id + ' says ' + data.msg)
+    socket.broadcast.emit('chat_rcvd', data)
+  })
 })
 
 
