@@ -9,12 +9,28 @@ app.use(session({
   saveUninitialized: true
 }))
 
-
 app.get('/hi', (req, res) => {
+  if (!req.session.hiCounter) {
+    req.session.hiCounter = 0
+  }
+  req.session.hiCounter++
+
+  if (req.session.byeCounter && req.session.byeCounter > 0) {
+    return res.send('Welcome Back!')
+  }
+
   res.send('Hello World!')
 })
 
 app.get('/bye', (req, res) => {
+  if (!req.session.byeCounter) {
+    req.session.byeCounter = 0
+  }
+  req.session.byeCounter++
+
+  if (!req.session.hiCounter) {
+    return res.redirect('/hi')
+  }
   res.send('See you later!')
 })
 
