@@ -13,10 +13,16 @@ const Users = db.define('user', {
   },
   password: {
     type: Sequelize.STRING(30),
-    allowNull: false
   },
   email: {
     type: Sequelize.STRING(30)
+  },
+  fbToken: {
+    type: Sequelize.TEXT
+  },
+  fbId: {
+    type: Sequelize.STRING(30),
+    unique: true
   }
 })
 

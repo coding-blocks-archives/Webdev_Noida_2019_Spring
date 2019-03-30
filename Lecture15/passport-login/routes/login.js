@@ -12,6 +12,18 @@ route.post('/',
   })
 )
 
+route.get('/facebook',
+  passport.authenticate('facebook')
+)
+
+route.get(
+  '/facebook/callback',
+  passport.authenticate('facebook', {
+    successRedirect: '/profile',
+    failureRedirect: '/login'
+  })
+)
+
 
 module.exports = {
   route
