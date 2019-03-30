@@ -1,0 +1,19 @@
+{
+  "name": "passport-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.3",
+    "passport": "^0.4.0",
+    "sequelize": "^5.2.7",
+    "sqlite3": "^4.0.6"
+  }
+}
