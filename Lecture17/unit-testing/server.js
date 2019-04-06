@@ -6,11 +6,9 @@ const app = express()
 app.use('/', express.static(__dirname + '/public'))
 
 app.get('/fare', (req, res) => {
-
-
   let fare = calcFare(
-    req.body.km,
-    req.body.fare
+    req.query.km,
+    req.query.min
   )
 
   res.send({
@@ -19,5 +17,6 @@ app.get('/fare', (req, res) => {
 
 })
 
-
-app.listen(3222)
+module.exports = {
+  app
+}

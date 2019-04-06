@@ -13,6 +13,7 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0"
