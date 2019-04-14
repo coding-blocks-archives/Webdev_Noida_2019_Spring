@@ -16,7 +16,11 @@ const Products = db.define('product', {
 })
 
 const Users = db.define('user', {
-  username: Sequelize.STRING
+  username: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    unique: true
+  }
 })
 
 
