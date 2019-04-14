@@ -1,5 +1,20 @@
 const route = require('express').Router()
-const { CartItems } = require('../db')
+const { CartItems, Products, Vendors } = require('../db')
+
+route.get('/', async (req, res) => {
+  const items = await CartItems.findAll({
+    include: [
+      {
+        model: Products,
+        include: [Vendors]
+      }
+    ],
+    where: {
+      userId: req.query.userId
+    }
+  })
+  return res.send(items)
+})
 
 route.post('/', async (req, res) => {
 
